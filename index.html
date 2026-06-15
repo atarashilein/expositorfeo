@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exposiciones visuales feas por pollito.</title>
+	
+	<meta name="language" content="ES, EN">
+	<meta name="Description" content="Exposición de elementos visuales sin aparente relación. Por un estudihambre de la UAM A.">
+	<meta name="Keywords" content="dadaísmo, duchamp, dios">
+	<meta name="author" content="Leinarmonia, atarashilein@gmail.com">
+	<meta name="copyright" content="CYAD UAM Azcapotzalco">	
+	<meta name="robots" content="Index, Follow">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Zilla+Slab+Highlight:wght@400;700&display=swap" rel="stylesheet">
+	
+	<style>
+		
+		* {margin: 0; padding: 0;}
+		body {background-color: dimgray; text-align: center; width: 100%;}
+		.wrapper {background-color: burlywood; width: 80%; height: 100vh; margin: 0 auto;}
+		/*Ya vimos lo de vw y vh pero hagamos como que no*/
+		.wrapper ul {list-style-type: none; width: 100%; }
+		.wrapper li {float: left; width: 20%; }
+		.wrapper img {width: 100%; height: auto;}
+		h1 {color: white;font-family: "coral pixels"}
+		.light h2 {color: white; font-size: 30px; line-height: 100px; font-family: "Zilla Slab Highlight"}
+		.light {display: none;}
+		.light:target {width: 100%; height: 100vh; background-color: rgba(0,0,0,0.70); position: fixed; top: 0; left: 0; z-index: 1; display: block;}
+		.visor {width: 60%; height: 100%; margin: 0 auto;}
+		.visor img {width: auto; height: 70%; border: rgba(0,58,127,1.00) solid 7px;}
+		.visor a {text-decoration: none; font-size: 40px; color: white;}
+		.visor a:hover {color: blue;}
+		.menor {position: absolute; top: 55vh; left: 15vw;}
+		.mayor {position: absolute; top: 55vh; right: 15vw;}
+		.coral-pixels-regular {font-family: "Coral Pixels", serif; font-weight: 400; font-style: normal;}
+		.zilla-slab-highlight-regular {font-family: "Zilla Slab Highlight", serif; font-weight: 400; font-style: normal;}
+	</style>
+	
+	<link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
+	
+</head>
+
+<body>
+	
+<div class="wrapper">
+	
+		<br>
+  <h1>Dadaísmo reutilizado</h1>
+		<br>
+		
+	<ul>
+			
+		<li><a href="#duchamp"><img src="IMG/mini-'Fountain'_by_Marcel_Duchamp_(replica).jpg" alt="Fuente de duchamp"/></a></li>
+		<li><a href="#dios"><img src="IMG/mini-dios.jpg" alt="Dios, obra dadaísta"/></a></li>
+		<li><a href="#muneca"><img src="IMG/mini-madam.jpg" alt="Muñeca dadaísta"/></a></li>
+		<li><a href="#olga"><img src="IMG/mini-olga_rozanovarc.jpg" alt="Pintura al óleo, olga"/></a></li>
+		<li><a href="#poema"><img src="IMG/mini-poema.jpg" alt="Poema dadá"/></a></li>
+		
+	</ul>
+		
+	  <div id= "duchamp" class="light">
+			
+		  <h2>Fuente de Duchamp</h2>
+			
+		  <div class="visor">
+				
+				<a class="menor" href="#poema">&#60</a>
+				<a class="mayor" href="#dios">&#62</a>
+		  		<img src="IMG/'Fountain'_by_Marcel_Duchamp_(replica).jpg" alt="Fuente de duchamp"/>
+			    <br><!--Ignore este br, no encontré otra forma de sulucionarlo XD-->
+			    <a class="x" href="">x</a>
+			  
+		  </div>
+			
+	  </div>
+		
+	  <div id= "dios" class="light">
+			
+		  <h2>Dios</h2>
+			
+		  <div class="visor">
+				
+				<a class="menor" href="#duchamp">&#60</a>
+				<a class="mayor" href="#muneca">&#62</a>
+		  		<img src="IMG/dios.jpg" alt="Dios dadaísta"/>
+			    <br>
+			    <a class="x" href="">x</a>
+			  
+		  </div>
+		  
+	  </div>
+		  
+	  <div id="muneca" class="light">
+			
+		  <h2>Die puppe</h2>
+			
+	  	<div class="visor">
+				
+				<a class="menor" href="#dios">&#60</a>
+				<a class="mayor" href="#olga">&#62</a>
+		  		<img src="IMG/madam.jpg" alt="Muñeca dadaísta"/>
+			    <br>
+			    <a class="x" href="">x</a>
+			  
+	  	</div>	
+		  
+	  </div>		
+		
+	  <div id="olga" class="light">
+			
+		  <h2>Óleo Dadá, Olga</h2>
+			
+	  	<div class="visor">
+				
+				<a class="menor" href="#muneca">&#60</a>
+				<a class="mayor" href="#poema">&#62</a>
+		  		<img src="IMG/olga_rozanovarc.jpg" alt="Pintura al óleo, olga"/>
+			    <br>
+			    <a class="x" href="">x</a>
+			  
+	  	</div>	
+		  
+	  </div>		
+ 
+	  <div id="poema" class="light">
+			
+		  <h2>Óleo Dadá, Olga</h2>
+			
+	  	<div class="visor">
+				
+				<a class="menor" href="#olga">&#60</a>
+				<a class="mayor" href="#duchamp">&#62</a>
+		  		<img src="IMG/poema.jpg" alt="Poema dadá"/>
+			    <br>
+			    <a class="x" href="">x</a>
+			  
+	  	</div>	
+		  
+	  </div>	
+	
+ </div>
+		
+</body>
+</html>
+<!--Holi, Lein estuvo aquí, ya sabe. https://linktr.ee/leinarmonia-->
